@@ -1,0 +1,33 @@
+@font-face {
+    font-family: MontserratFuentesCustom;
+    src: url(Montserrat/static/Montserrat-Regular.ttf);
+}
+
+h1{
+    font-style: italic;
+    font-family: MontserratFuentesCustom;
+    text-transform: uppercase ;
+    font-weight: bold;
+
+    /*Colores*/
+    color: red;
+    /*Colores del sistema*/
+
+    /*Colores hexadecimales*/
+
+    /*Colores RGB*/
+
+    /*Colores RGBA*/
+}
+
+h3{
+    font-family: MontserratFuentesCustom;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    
+}
