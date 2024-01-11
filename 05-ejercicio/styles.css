@@ -55,43 +55,67 @@
 
 }
 
-#contenido{
+#contenido {
     width: 69%;
     float: left;
 }
 
-#lateral{
+#lateral {
     float: left;
     width: 30%;
     border: 1px solid black;
     min-height: 500px;
+    max-height: 650px;
     text-align: center;
-    
+    overflow: scroll;
+
 }
 
-#contenido > h1{
+#contenido>h1 {
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ccc;
     padding: 10px;
+    text-shadow: 1px 1px 3px gray;
 }
 
-#contenido .caja{
+#contenido .caja {
+    position: relative;
     width: 40%;
     height: 250px;
-    background-color: red;
-    border: 5px solid blue;
+    background-color: whitesmoke;
+    border: 2px solid gray;
     color: white;
     float: left;
     margin: 20px;
     margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 5px 1px 15px black;
+    border-radius: 15px;
 }
 
-#footer{
+#footer {
     width: 100%;
     height: 55px;
     line-height: 55px;
     background: #eee;
     text-align: center;
     border-top: 1px solid #ccc;
+}
+
+.libre{
+    position: absolute;
+    top: 300px;
     
+    right: 40%;
+
+
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
 }
