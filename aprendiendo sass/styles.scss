@@ -58,5 +58,63 @@ h1{
 }
 
 .listado{
-    @include crearBordes(green, 5px, yellow);
+    @include crearBordes(green, 10px, yellow);
+}
+//Herencia 
+
+%alert-normal{
+    border: 1px solid gray;
+    background: #ccc;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-success{
+    @extend %alert-normal;
+    color: green;
+    border-color: green;
+}
+
+//Operadores
+
+h1{
+    font-size: 20px + 5px;
+}
+
+.caja{
+    width: 500px / 1920px * 100%;
+}
+
+//Condicionales - if
+
+
+h1{
+    @if $color-fondo == #ccc{
+        color: salmon;
+    } @else {
+        color: blueviolet;
+    }
+}
+
+
+//For
+$contador: 1;
+
+@for $contador from 1 through 8{
+    .listado ul li:nth-child(#{$contador}){
+        color: orangered;
+        font-size: $contador * 2px;
+    }
 }
